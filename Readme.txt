@@ -13,3 +13,14 @@ criar o arquivo setup.py de acordo com o que está no Git, dentro do diretorio o
 e criar o executavel executando a seguinte linha:
 setup.py build
 
+caso apresente erro de module crypto :
+
+pip uninstall crypto
+Delete "crypto" Folder [C:\Users\AppData\Local\Programs\Python\Python37\Lib\site-packages]
+pip install crypto
+pip uninstall pycryptodome
+pip install pycryptodome
+
+Rename Folder "crypto" to "Crypto" [C:\Users\AppData\Local\Programs\Python\Python37\Lib\site-packages]
+
+Then You Use "from Crypto.Cipher import AES" in Code
